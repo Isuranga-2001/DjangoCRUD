@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+</head>
+<body>
+
+<center>
+  <h1>User Registration</h1>
+  <form name="register" method="post" action="../insert_user/">
+    {% csrf_token %}
+    <pre>
+      UID   : <input type="text" name="uid" placeholder="Enter User ID" required> <br>
+      Name  : <input type="text" name="uname" placeholder="Enter Name" required> <br>
+      Email : <input type="email" name="email" placeholder="Enter Email" required> <br>
+      Phone : <input type="text" name="phone" placeholder="Enter Phone Number" required> <br>
+
+      <input type="submit" name="reg" value="Register" width="500" height="100">
+    </pre>
+  </form>
+</center>
+
+</body>
+</html>
